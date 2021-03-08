@@ -24,6 +24,8 @@ mySprite = sprites.create(img("""
     """),
     SpriteKind.player)
 controller.move_sprite(mySprite)
-tiles.set_tilemap(tilemap("""level1"""))
+tiles.set_tilemap(tilemap("""
+    level1
+"""))
 tiles.place_on_random_tile(mySprite, sprites.dungeon.stair_west)
 scene.camera_follow_sprite(mySprite)
